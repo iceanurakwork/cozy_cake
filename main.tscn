@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cqow47bch5ocs"]
+
+[ext_resource type="Script" uid="uid://dt2ofan62emnk" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://b5m72om2ebfda" path="res://focus_timer.gd" id="2_h2yge"]
+
+[node name="Main" type="Control" unique_id=911172104]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0xm2m")
+
+[node name="Body" type="Panel" parent="." unique_id=1668121207]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 310.0
+offset_bottom = 270.0
+
+[node name="Character" type="ColorRect" parent="Body" unique_id=1420586747]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 94.0
+offset_right = 169.0
+offset_bottom = 134.0
+
+[node name="StateLabel" type="Label" parent="Body" unique_id=1850967764]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="StartButton" type="Button" parent="Body" unique_id=1717767594]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 146.0
+offset_right = 205.0
+offset_bottom = 177.0
+text = "เริ่ม (เทสต์ 10 วิ)"
+
+[node name="CollectButton" type="Button" parent="Body" unique_id=694935071]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 181.0
+offset_right = 176.0
+offset_bottom = 212.0
+text = "เก็บเค้ก"
+
+[node name="FocusTimer" type="Node" parent="." unique_id=1862712543]
+script = ExtResource("2_h2yge")
